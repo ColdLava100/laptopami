@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laptop untuk EE Student — Budget RM4,300</title>
+<meta name="description" content="Panduan pilih laptop untuk pelajar Kejuruteraan Elektrik — MATLAB, LTspice, circuit sim, PCB design. Budget RM4,000-4,300. Semakan 25 Ogos 2026.">
+<style>
+  :root{
+    --pink:#d6336c; --pink-dark:#a61e4d; --pink-soft:#fff0f5;
+    --ink:#24202a; --muted:#6b6572; --line:#eee2e8; --bg:#faf7f9;
+    --card:#ffffff; --green:#2b8a3e; --amber:#b45309; --red:#c0392b;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.55;}
+  .wrap{max-width:1000px; margin:0 auto; padding:18px 16px 60px;}
+  header{padding:26px 0 18px; border-bottom:1px solid var(--line); margin-bottom:22px;}
+  h1{font-size:1.55rem; line-height:1.3; color:var(--pink-dark);}
+  .sub{color:var(--muted); font-size:.95rem; margin-top:6px;}
+  .verdict{background:var(--pink-soft); border:1px solid #f8c8d8; border-radius:12px;
+    padding:14px 16px; margin-top:16px; font-size:.97rem;}
+  .verdict b{color:var(--pink-dark);}
+  .stamp{display:inline-block; margin-top:10px; font-size:.78rem; color:var(--muted);
+    background:#fff; border:1px solid var(--line); border-radius:20px; padding:3px 12px;}
+  h2{font-size:1.25rem; margin:34px 0 4px; color:var(--pink-dark);}
+  .cat-desc{color:var(--muted); font-size:.9rem; margin-bottom:14px;}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:16px;}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden;
+    display:flex; flex-direction:column; box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  .card .imgbox{background:#fff; padding:14px; text-align:center; border-bottom:1px solid var(--line);}
+  .card img{max-width:100%; max-height:210px; width:auto; height:auto; object-fit:contain; border-radius:8px;}
+  .card .body{padding:14px 16px 16px; display:flex; flex-direction:column; flex:1;}
+  .card h3{font-size:1.05rem; line-height:1.3;}
+  .chip{display:inline-block; font-size:.72rem; border-radius:20px; padding:2px 10px; margin:2px 4px 2px 0;}
+  .chip.color{background:var(--pink-soft); color:var(--pink-dark); border:1px solid #f3c2d4;}
+  .chip.best{background:#e6f7e9; color:var(--green); border:1px solid #b7e3c0;}
+  .chip.warn{background:#fef3e2; color:var(--amber); border:1px solid #f3d9a8;}
+  .price{font-size:1.3rem; font-weight:700; color:var(--pink-dark); margin:8px 0 2px;}
+  .price small{font-size:.78rem; color:var(--muted); font-weight:400;}
+  table.spec{width:100%; border-collapse:collapse; font-size:.83rem; margin:8px 0 10px;}
+  table.spec td{padding:3px 0; border-bottom:1px dashed var(--line); vertical-align:top;}
+  table.spec td:first-child{color:var(--muted); width:38%; white-space:nowrap;}
+  .note{font-size:.82rem; color:var(--muted); margin:4px 0;}
+  .plus{color:var(--green);} .minus{color:var(--red);}
+  ul.tick{list-style:none; font-size:.85rem; margin:6px 0;}
+  ul.tick li{padding:2px 0;}
+  .btn{display:inline-block; margin-top:auto; padding:10px 14px; border-radius:10px; text-align:center;
+    background:var(--pink); color:#fff; text-decoration:none; font-size:.9rem; font-weight:600;}
+  .btn:hover{background:var(--pink-dark);}
+  .btn.ghost{background:#fff; color:var(--pink-dark); border:1.5px solid var(--pink);}
+  .callout{background:#fef3e2; border:1px solid #f3d9a8; border-radius:12px; padding:14px 16px; font-size:.9rem; margin:12px 0;}
+  .callout b{color:var(--amber);}
+  .traps{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:10px; margin-top:10px;}
+  .trap{background:var(--card); border:1px solid var(--line); border-left:4px solid var(--red);
+    border-radius:10px; padding:10px 12px; font-size:.86rem;}
+  .trap b{display:block; margin-bottom:2px;}
+  .tips{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; font-size:.92rem;}
+  .tips li{margin:7px 0 7px 18px;}
+  footer{margin-top:36px; padding-top:14px; border-top:1px solid var(--line); font-size:.78rem; color:var(--muted);}
+  .lbl{font-size:.7rem; color:var(--muted);}
+  .imgcap{font-size:.72rem; color:var(--muted); margin-top:6px;}
+  .refcard{background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden;
+    display:flex; flex-direction:row; align-items:center; gap:18px; padding:16px;
+    box-shadow:0 1px 3px rgba(0,0,0,.05); margin-bottom:12px;}
+  .refcard .refimg{display:flex; flex-direction:column; align-items:center; gap:6px; flex-shrink:0;}
+  .refcard .refimg img{width:280px; max-width:40vw; height:auto; border-radius:10px; object-fit:contain;}
+  .refcard .refimg .imgcap{max-width:280px; text-align:center;}
+  .refcard .body{flex:1;}
+  @media(max-width:640px){ h1{font-size:1.3rem;} .grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>🌸 Laptop untuk Pelajar Kejuruteraan Elektrik — Budget RM4,300</h1>
+  <div class="sub">Untuk Ami, kawan Nurin · Study only: MATLAB, coding, LTspice, circuit simulation, PCB design, IoT/embedded · Windows 11</div>
+  <div class="verdict">
+    <b>Verdict ringkas:</b> spec yang diberikan (Core i5/Ryzen 5 H-series, 16GB DDR5, 512GB-1TB NVMe, 15.6-16", Win 11) <b>semuanya betul</b> — kecuali satu perkara: <b>RTX 4050 tak perlu</b>. Sebab tak main game dan tak buat AI/ML training, GPU tu tidak akan disentuh oleh MATLAB, LTspice, atau KiCad (semua guna CPU + RAM). Duit RM4,000-4,300 ini lebih baik dibelanjakan pada <b>CPU yang laju + RAM yang boleh upgrade + bateri tahan lama + berat ringan</b>.
+  </div>
+  <div class="callout" style="margin-top:12px">
+    🛒 <b>Nak beli di kedai fizikal?</b> Semua harga di bawah adalah harga <b>kedai online</b> (Shopee / Lazada / laman rasmi jenama) — <b>anggaran rujukan</b>, bukan harga tetap. Di kedai fizikal harga selalunya beza <b>±RM100-300</b>, tetapi dia boleh <b>test unit terus</b> dan dapat servis waranti tempatan. Bawa senarai spec ini, tunjuk kat staff, dan minta <b>price match</b> dengan harga online.
+  </div>
+  <div class="stamp">💰 Harga = kedai <b>ONLINE</b> (anggaran rujukan) · Semakan: 25 Ogos 2026 · [LIVE] = harga disahkan hari ini · [REF] = disahkan 19 Ogos</div>
+</header>
+
+<!-- ================= KATEGORI 1: PINK ================= -->
+<h2>🌸 Kategori 1 — PINK (warna pink dari kilang)</h2>
+<div class="cat-desc">Pink dalam bajet ni hanya ada pada laptop 14" nipis & ringan — CPU U-series dan RAM soldered. Tiada laptop gaming pink wujud di pasaran Malaysia.</div>
+<div class="grid">
+
+  <!-- Swift Lite -->
+  <div class="card">
+    <div class="imgbox"><img src="{{IMG_swiftlite}}" alt="Acer Swift Lite 14 Nude Pink"></div>
+    <div class="body">
+      <h3>Acer Swift Lite 14 SFL14-54M-7531</h3>
+      <span class="chip color">Nude Pink</span><span class="chip best">⭐ Pilihan kategori pink</span><span class="chip">LIVE 25-Ogo</span>
+      <div class="price">≈ RM4,250 <small>harga online · dalam budget ✅</small></div>
+      <table class="spec">
+        <tr><td>CPU</td><td>Core Ultra 7 155U (12C/14T)</td></tr>
+        <tr><td>RAM</td><td>16GB LPDDR5 <b>soldered</b> ✗</td></tr>
+        <tr><td>Storage</td><td>512GB NVMe</td></tr>
+        <tr><td>Skrin</td><td>14" OLED WUXGA · 100% DCI-P3</td></tr>
+        <tr><td>Berat / Bateri</td><td><b>999g</b> / 50Wh</td></tr>
+        <tr><td>Waranti</td><td>2 tahun</td></tr>
+      </table>
+      <ul class="tick">
+        <li><span class="plus">+</span> Paling ringan (999g) + skrin OLED sangat cantik</li>
+        <li><span class="minus">−</span> RAM tak boleh upgrade (16GB sahaja selama-lamanya)</li>
+        <li><span class="minus">−</span> CPU U-series — perlahan sedikit pada sim panjang</li>
+      </ul>
+      <a class="btn" href="https://shopee.com.my/product/120723581/45160381403" target="_blank" rel="noopener">Semak harga &amp; stok di Shopee →</a>
+    </div>
+  </div>
+
+  <!-- Vivobook A1404V -->
+  <div class="card">
+    <div class="imgbox"><img src="{{IMG_a1404v}}" alt="ASUS Vivobook A1404V Terra Cotta"></div>
+    <div class="body">
+      <h3>ASUS Vivobook A1404V-APB012WMS</h3>
+      <span class="chip color">Pink / Terra Cotta</span><span class="chip">LIVE 25-Ogo</span>
+      <div class="price">≈ RM4,199 <small>harga online · dalam budget ✅</small></div>
+      <table class="spec">
+        <tr><td>CPU</td><td>Core 7 150U (10C/12T)</td></tr>
+        <tr><td>RAM</td><td>16GB DDR4 (8+8) · <b>1 slot → 24GB</b> ✓</td></tr>
+        <tr><td>Storage</td><td><b>1TB</b> NVMe</td></tr>
+        <tr><td>Skrin</td><td>14" FHD 250nits (malap)</td></tr>
+        <tr><td>Berat / Bateri</td><td>~1.5kg / 42Wh</td></tr>
+        <tr><td>Waranti</td><td>2 tahun + 1 tahun accidental</td></tr>
+      </table>
+      <ul class="tick">
+        <li><span class="plus">+</span> Satu-satunya pink dengan slot RAM + 1TB</li>
+        <li><span class="minus">−</span> Skrin 250nits malap + RAM DDR4 (generasi lama)</li>
+        <li><span class="minus">−</span> Bateri kecil (42Wh)</li>
+      </ul>
+      <a class="btn" href="https://shopee.com.my/product/32615421/40312703882" target="_blank" rel="noopener">Semak harga &amp; stok di Shopee →</a>
+    </div>
+  </div>
+
+  <!-- Pavilion Plus -->
+  <div class="card">
+    <div class="imgbox"><img src="{{IMG_pavilion}}" alt="HP Pavilion Plus 14 Tranquil Pink"></div>
+    <div class="body">
+      <h3>HP Pavilion Plus 14-ew1116TU</h3>
+      <span class="chip color">Tranquil Pink</span><span class="chip warn">+RM299 dari bajet</span><span class="chip">LIVE 25-Ogo</span>
+      <div class="price">≈ RM4,599 <small>harga online · tunggu 9.9 → mungkin ~RM4,300</small></div>
+      <table class="spec">
+        <tr><td>CPU</td><td><b>Core Ultra 5 125H (14C/18T)</b> — terbaik dalam kelas pink</td></tr>
+        <tr><td>RAM</td><td>16GB LPDDR5x <b>soldered</b> ✗</td></tr>
+        <tr><td>Storage</td><td>512GB NVMe</td></tr>
+        <tr><td>Skrin</td><td>14" 2.8K OLED</td></tr>
+        <tr><td>Berat / Bateri</td><td>~1.4kg / 68Wh</td></tr>
+      </table>
+      <ul class="tick">
+        <li><span class="plus">+</span> CPU H-class sebenar — paling laju untuk MATLAB/LTspice antara semua pink</li>
+        <li><span class="minus">−</span> RM299 melebihi bajet (9.9 sale 9 Sept mungkin turun)</li>
+        <li><span class="minus">−</span> RAM soldered — 16GB sahaja</li>
+      </ul>
+      <a class="btn" href="https://shopee.com.my/product/424367669/25268757300" target="_blank" rel="noopener">Semak harga &amp; stok di Shopee →</a>
+      <div class="imgcap">*imej dari listing penjual lain — pastikan pilih variant Tranquil Pink</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= KATEGORI 2: UPGRADEABLE ================= -->
+<h2>🔧 Kategori 2 — UPGRADEABLE (boleh tambah RAM & storage kemudian)</h2>
+<div class="cat-desc">Untuk laptop yang tahan 4-5 tahun. RAM dan SSD boleh ditambah bila perlu — penting untuk Year 3 FYP (Simulink, Vivado, banyak aplikasi sekali gus).</div>
+<div class="grid">
+
+  <!-- IdeaPad 16IRL9 -->
+  <div class="card">
+    <div class="imgbox"><img src="{{IMG_ideapad}}" alt="Lenovo IdeaPad Slim 5 16IRL9"></div>
+    <div class="body">
+      <h3>Lenovo IdeaPad Slim 5 16IRL9</h3>
+      <span class="chip best">⭐ CPU terbaik per ringgit</span><span class="chip">REF 19-Ogo</span>
+      <div class="price">≈ RM3,099 – 3,399 <small>harga online (laman rasmi Lenovo) · + 16GB stick ≈ RM4,000-4,160 (32GB)</small></div>
+      <table class="spec">
+        <tr><td>CPU</td><td><b>i5-13500H (12C/16T)</b> — paling banyak core dalam senarai ini</td></tr>
+        <tr><td>RAM</td><td>16GB DDR5 · <b>2× SODIMM → 32GB</b> ✓✓</td></tr>
+        <tr><td>Storage</td><td>512GB + <b>2× M.2 slot</b> ✓✓</td></tr>
+        <tr><td>Skrin</td><td>16" WUXGA 16:10</td></tr>
+        <tr><td>Berat / Bateri</td><td>~1.7-1.9kg / 57Wh</td></tr>
+      </table>
+      <ul class="tick">
+        <li><span class="plus">+</span> 2 slot RAM + 2 slot SSD — upgrade penuh</li>
+        <li><span class="plus">+</span> Harga paling murah untuk spec setanding</li>
+        <li><span class="minus">−</span> Stock tipis di marketplace — semak di laman rasmi Lenovo MY</li>
+      </ul>
+      <a class="btn" href="https://www.lenovo.com/my/en/p/laptops/ideapad/ideapad-5/ideapad-slim-5i-gen-9-(16-inch-intel)/83dccto1wwmy1" target="_blank" rel="noopener">Semak harga di Lenovo MY →</a>
+      <div class="imgcap">*imej model 16" generasi terkini (Gen 10) — reka bentuk hampir sama</div>
+    </div>
+  </div>
+
+  <!-- Vivobook S16 -->
+  <div class="card">
+    <div class="imgbox"><img src="{{IMG_s16}}" alt="ASUS Vivobook S16 S3607V"></div>
+    <div class="body">
+      <h3>ASUS Vivobook S16 S3607V-ARP166WS</h3>
+      <span class="chip best">⭐ Pilihan kategori upgradeable</span><span class="chip">LIVE 25-Ogo</span>
+      <div class="price">≈ RM3,365 <small>harga online · dalam budget ✅</small></div>
+      <table class="spec">
+        <tr><td>CPU</td><td>i5-13420H (8C/12T)</td></tr>
+        <tr><td>RAM</td><td>16GB DDR5 (8+8) · <b>1 slot → 24GB</b> ✓</td></tr>
+        <tr><td>Storage</td><td><b>1TB</b> NVMe</td></tr>
+        <tr><td>Skrin</td><td>16" WUXGA 16:10 · 144Hz</td></tr>
+        <tr><td>Berat / Bateri</td><td><b>1.70kg</b> / <b>70Wh</b></td></tr>
+        <tr><td>Waranti</td><td>2 tahun carry-in + 1 tahun accidental</td></tr>
+      </table>
+      <ul class="tick">
+        <li><span class="plus">+</span> 1TB + 16" + bateri besar + ringan — nilai terbaik</li>
+        <li><span class="plus">+</span> RM935 simpanan dari bajet → belanja pada aksesori pink</li>
+        <li><span class="minus">−</span> RAM max 24GB (8GB soldered + 1 slot)</li>
+      </ul>
+      <a class="btn" href="https://shopee.com.my/product/7856122/41857669104" target="_blank" rel="noopener">Semak harga &amp; stok di Shopee →</a>
+    </div>
+  </div>
+
+  <!-- Katana -->
+  <div class="card">
+    <div class="imgbox"><img src="{{IMG_katana}}" alt="MSI Katana A15 AI B8VE-638"></div>
+    <div class="body">
+      <h3>MSI Katana A15 AI B8VE-638</h3>
+      <span class="chip best">Upgradeability maksimum</span><span class="chip">LIVE · Official Store</span>
+      <div class="price">≈ RM4,099 <small>harga online (Official Store) · dalam budget ✅</small></div>
+      <table class="spec">
+        <tr><td>CPU</td><td>Ryzen 7 8845HS (8C/16T, 5.1GHz)</td></tr>
+        <tr><td>RAM</td><td>16GB DDR5 · <b>2× SODIMM → max 64GB</b> ✓✓ (32GB = 1 stick sahaja)</td></tr>
+        <tr><td>Storage</td><td><b>1TB</b> + <b>2× M.2</b> ✓✓</td></tr>
+        <tr><td>GPU</td><td>RTX 4050 (bonus — tak perlu untuk study)</td></tr>
+        <tr><td>Skrin</td><td>15.6" FHD 144Hz</td></tr>
+        <tr><td>Berat / Bateri</td><td><b>2.25kg</b> ⚠️ / 53.5Wh</td></tr>
+      </table>
+      <ul class="tick">
+        <li><span class="plus">+</span> Spec lengkap + waranti 2 tahun dari MSI Official Store</li>
+        <li><span class="minus">−</span> Chassis gaming: berat 2.25kg + bateri pendek — dibawa setiap hari ke kuliah</li>
+        <li><span class="minus">−</span> GPU 4050 tak akan digunakan (tak main game)</li>
+      </ul>
+      <a class="btn" href="https://shopee.com.my/product/95958256/52751778747" target="_blank" rel="noopener">Semak harga &amp; stok di Shopee →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= KATEGORI 3: BEST OF BOTH ================= -->
+<h2>🌸🔧 Kategori 3 — BEST OF BOTH (pink + boleh upgrade)</h2>
+<div class="cat-desc">Pink dan upgradeability memang tak bertemu di kilang — jadi ada 2 cara untuk dapat kedua-duanya:</div>
+<div class="grid">
+
+  <div class="card">
+    <div class="imgbox"><img src="{{IMG_a1404v}}" alt="ASUS Vivobook A1404V Terra Cotta"></div>
+    <div class="body">
+      <h3>Pilihan A — Pink kilang + slot RAM</h3>
+      <p class="note" style="margin-top:8px"><b>ASUS Vivobook A1404V (Terra Cotta) — ≈ RM4,199 (harga online)</b></p>
+      <p class="note">Satu-satunya laptop berwarna pink di kilang yang ada slot RAM (1 slot → 24GB) dan 1TB SSD. Kelemahan jujur: skrin 250nits malap + DDR4 + bateri 42Wh.</p>
+      <ul class="tick">
+        <li><span class="plus">+</span> Pink sebenar + 24GB path + 1TB</li>
+        <li><span class="minus">−</span> Skrin malap, DDR4, bateri kecil</li>
+      </ul>
+      <a class="btn" href="https://shopee.com.my/product/32615421/40312703882" target="_blank" rel="noopener">Semak harga &amp; stok di Shopee →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="imgbox"><img src="{{IMG_s16}}" alt="ASUS Vivobook S16 S3607V"></div>
+    <div class="body">
+      <h3>Pilihan B — ⭐ Pink "melalui aksesori" (disyorkan)</h3>
+      <p class="note" style="margin-top:8px"><b>ASUS Vivobook S16 — ≈ RM3,365 (harga online) + skin/sleeve pink (~RM50-150) = ~RM3,500</b></p>
+      <p class="note">Dari jauh nampak pink, dari segi dalaman ia laptop terbaik dalam bajet: 16", 1TB, 1.70kg, bateri 70Wh, dan ada slot RAM (→24GB).</p>
+      <ul class="tick">
+        <li><span class="plus">+</span> Nilai terbaik + pink look + upgradeable</li>
+        <li><span class="plus">+</span> Jimat ~RM700 dari budget — boleh tambah stick RAM atau SSD kemudian</li>
+        <li><span class="minus">−</span> Bukan pink sebenar — guna skin/sleeve/keyboard cover</li>
+      </ul>
+      <a class="btn" href="https://shopee.com.my/product/7856122/41857669104" target="_blank" rel="noopener">Semak harga &amp; stok di Shopee →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="imgbox"><img src="{{IMG_ideapad}}" alt="Lenovo IdeaPad Slim 5 16IRL9"></div>
+    <div class="body">
+      <h3>Pilihan C — Spec maksimum + pink look</h3>
+      <p class="note" style="margin-top:8px"><b>Lenovo IdeaPad Slim 5 16IRL9 — ≈ RM3,099-3,399 (harga online) + skin RM100 + 16GB stick RM400-760 = ~RM3,600-4,260</b></p>
+      <p class="note">Jalan paling "future-proof": CPU 12-core terbaik, 2 slot RAM + 2 slot SSD, upgrade ke <b>32GB</b> dan masih dalam bajet.</p>
+      <ul class="tick">
+        <li><span class="plus">+</span> 32GB RAM + CPU terbaik + pink look</li>
+        <li><span class="minus">−</span> Kena semak stock di Lenovo MY (tipis di marketplace)</li>
+      </ul>
+      <a class="btn" href="https://www.lenovo.com/my/en/p/laptops/ideapad/ideapad-5/ideapad-slim-5i-gen-9-(16-inch-intel)/83dccto1wwmy1" target="_blank" rel="noopener">Semak harga di Lenovo MY →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= RUJUKAN NURIN ================= -->
+<h2>✅ Rujukan nyata: laptop Nurin (dah dibeli)</h2>
+<div class="cat-desc">Bukan cadangan untuk Ami — ini pembelian sebenar (Julai 2026). Pelajaran: di RM4,300, Nurin pilih RAM berbanding GPU.</div>
+<div class="refcard">
+  <div class="refimg">
+    <img src="{{IMG_nitro}}" alt="Acer Nitro V15 ANV15-41-R0DZ">
+    <div class="imgcap">*imej model sebenar ANV15-41-R0DZ dari listing penjual</div>
+  </div>
+  <div class="body">
+    <h3>Acer Nitro V15 ANV15-41-R0DZ — laptop Nurin</h3>
+    <span class="chip">Dibeli 22 Julai 2026</span><span class="chip">Harga RM4,300</span><span class="chip warn">Referensi — bukan cadangan</span>
+    <table class="spec">
+      <tr><td>CPU</td><td>Ryzen 5 6600H (6C/12T)</td></tr>
+      <tr><td>RAM</td><td>24GB DDR5 (8GB + tambah 16GB) · <b>2× SODIMM → boleh naik 32GB</b> ✓✓</td></tr>
+      <tr><td>Storage</td><td>512GB NVMe + slot M.2 kosong</td></tr>
+      <tr><td>GPU</td><td>RTX 3050 6GB (bukan 4050 — dan ia tetap cukup)</td></tr>
+      <tr><td>Skrin</td><td>15.6" FHD 165Hz</td></tr>
+      <tr><td>Kos</td><td>RM3,400 (unit 8GB) + RM900 (RAM 16GB) = <b>RM4,300</b></td></tr>
+    </table>
+    <ul class="tick">
+      <li><span class="plus">+</span> Bukti nyata: di RM4,300, duit lebih baik untuk RAM daripada GPU mewah</li>
+      <li><span class="plus">+</span> Beli 8GB + upgrade sendiri jimat ~RM462 vs ambil 16GB terus dari kedai</li>
+      <li><span class="minus">−</span> CPU 6-core sahaja — Nurin ambil untuk web dev + editing, bukan sim berat</li>
+    </ul>
+    <div class="note">Untuk Ami yang fokus MATLAB/LTspice, CPU lebih penting — sebab itu IdeaPad/Vivobook 12-core di atas lebih sesuai daripada Nitro ini untuk kerja kursus EE.</div>
+  </div>
+</div>
+
+<!-- ================= JANGAN BELI ================= -->
+<h2>⚠️ Jangan beli ini (perangkap yang kami jumpa masa semak)</h2>
+<div class="callout">
+  <b>Kisah perangkap spec-sheet:</b> IdeaPad Slim 5 <b>14IRL8</b> (RM3,299) nampak seperti tawaran hebat — i5-13500H, 16GB, harga murah. Tapi baca spec halus: <b>RAM soldered, tiada slot langsung</b> ("Memory Slot: Not applicable"). Harga murah ≠ boleh upgrade. Sentiasa semak baris "Memory Slot" / "2 Slots" sebelum beli.
+</div>
+<div class="traps">
+  <div class="trap"><b>MSI Thin GF63 @ RM3,999</b>GPU 4050 hanya 45W (lemah), CPU i5-12450H, stock 2023, binaan panas. Bayar untuk badge, dapat mesin lemah.</div>
+  <div class="trap"><b>Lenovo LOQ 83DX0071MJ @ RM4,199</b>Nampak murah untuk 4050, tapi RAM 8GB sahaja — tambah stick = total RM4,600-4,950, melebihi bajet.</div>
+  <div class="trap"><b>IdeaPad Slim 5 14IRL8 @ RM3,299</b>RAM soldered LPDDR5, tiada upgrade path. Perangkap spec-sheet klasik.</div>
+  <div class="trap"><b>Honor MagicBook X16 @ RM2,999</b>8GB soldered — gagal keperluan 16GB MATLAB, tiada jalan keluar.</div>
+  <div class="trap"><b>Laptop RTX 5050</b>Generasi baru, masih RM5,000+ — luar bajet. RTX 4050 (atau tiada GPU) adalah tier yang betul.</div>
+  <div class="trap"><b>LPDDR5x soldered = mati</b>Sebarang laptop dengan RAM LPDDR5x tiada slot langsung — 16GB hari ini, 16GB selama-lamanya.</div>
+</div>
+
+<!-- ================= TIPS ================= -->
+<h2>💡 Tips sebelum beli</h2>
+<div class="tips">
+  <ul>
+    <li><b>9.9 Super Shopping Day (9 Sept)</b> — harga sekarang dah ada promo awal; Pavilion Plus pink mungkin turun ke ~RM4,300. Kalau tak tergesa, tunggu 2 minggu.</li>
+    <li><b>Nak beli di kedai fizikal?</b> Kedai yang ada stok laptop begini: <b>Harvey Norman, Senheng, Courts, Thunder Match</b> dan kedai konsep jenama (ASUS / Acer / Lenovo / MSI / HP store). Harga fizikal selalunya ±RM100-300 dari harga online — bawa senarai spec ini, tunjuk kat staff, minta <b>price match</b>. Bonus: boleh test unit dulu + servis waranti tempatan.</li>
+    <li><b>Kalau nak 32GB:</b> beli yang 16GB + tambah 1 stick DDR5 16GB (RM394-760 hari ini). Jangan bayar mahal untuk 32GB dari kilang.</li>
+    <li><b>Maksud "upgradeable" ada 3 tier:</b> 2× SODIMM (terbaik — tukar kedua-dua, 32-64GB) · 1 slot + 1 soldered (max 24GB) · soldered semua (mati). Semak "Memory Slot" dalam spec.</li>
+    <li><b>Search terms Shopee/Lazada:</b> <code>Swift Lite 14 pink</code> · <code>Vivobook S16 S3607V</code> · <code>IdeaPad Slim 5 16IRL9</code> · <code>Katana A15 AI B8VE</code> · <code>Pavilion Plus 14 pink</code></li>
+    <li><b>Study-only = 14" okay.</b> Semua pilihan pink adalah 14" — lebih ringan dibawa ke kelas, dan itu satu kelebihan, bukan kekurangan.</li>
+  </ul>
+</div>
+
+<footer>
+  <p>Semua harga disemak pada <b>25 Ogos 2026</b> menerusi listing Shopee/Lazada/laman rasmi yang aktif — iaitu <b>harga kedai online (anggaran rujukan)</b>. Harga di kedai fizikal mungkin berbeza (selalunya ±RM100-300). [LIVE] = harga & stock disahkan pada tarikh semakan · [REF] = disahkan 19 Ogos. Harga boleh berubah — sentiasa semak sebelum bayar.</p>
+  <p style="margin-top:6px">Sumber: Shopee (MSI Official Store, CLICK IT STORE & penjual lain), Lenovo Malaysia, Acer Malaysia, HP Malaysia · Spec disahkan dari PDP rasmi setiap listing · Bukan affiliate — tiada komisen.</p>
+</footer>
+
+</div>
+</body>
+</html>
